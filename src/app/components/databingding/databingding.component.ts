@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./databingding.component.css']
 })
 export class DatabingdingComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
