@@ -17,6 +17,7 @@ import { BasicparciceComponent } from './components/practice/basicparcice/basicp
 import { DatabingdingComponent } from './components/databingding/databingding.component';
 import { StringinterpolationComponent } from './components/databingding/stringinterpolation/stringinterpolation.component';
 import { PropertyBindingComponent } from './components/databingding/property-binding/property-binding.component';
+import { EventbindingComponent } from './components/databingding/eventbinding/eventbinding.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PropertyBindingComponent } from './components/databingding/property-bin
     BasicparciceComponent,
     DatabingdingComponent,
     StringinterpolationComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    EventbindingComponent
   ],
   imports: [
     BrowserModule,

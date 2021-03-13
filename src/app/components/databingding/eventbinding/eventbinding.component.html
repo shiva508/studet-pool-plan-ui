@@ -1,0 +1,7 @@
+<div class="row">
+<button 
+[disabled]="!allowServiceCreation" 
+(click)="createNewServiceFun()"
+class="btn btn-info">Create New Service</button>
+<h2>{{serviceCreationStatus}}</h2>
+</div>
