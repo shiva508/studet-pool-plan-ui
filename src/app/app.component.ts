@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'studet-pool-plan-ui';
+  title:string = 'Nithya Plans';
+  pendingTask:string = 'You stoped shiva loving you!!!!';
+  
+  constructor() {
+    console.log("408")
+  }
 }
