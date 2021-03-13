@@ -18,6 +18,7 @@ import { DatabingdingComponent } from './components/databingding/databingding.co
 import { StringinterpolationComponent } from './components/databingding/stringinterpolation/stringinterpolation.component';
 import { PropertyBindingComponent } from './components/databingding/property-binding/property-binding.component';
 import { EventbindingComponent } from './components/databingding/eventbinding/eventbinding.component';
+import { TwoWayDataBindingComponent } from './components/databingding/two-way-data-binding/two-way-data-binding.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { EventbindingComponent } from './components/databingding/eventbinding/ev
     DatabingdingComponent,
     StringinterpolationComponent,
     PropertyBindingComponent,
-    EventbindingComponent
+    EventbindingComponent,
+    TwoWayDataBindingComponent
   ],
   imports: [
     BrowserModule,

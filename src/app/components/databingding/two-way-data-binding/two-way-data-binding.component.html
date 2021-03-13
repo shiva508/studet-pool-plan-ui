@@ -1,0 +1,8 @@
+<div class="row">
+    <label>Service Name</label>
+    <input class="form-control" type="text" (input)="onTypeInputData($event)">
+    <h1>{{serviceName}}</h1>
+    <label>Service Name:Two way binding</label>
+    <input class="form-control" type="text" [(ngModel)]="serviceNameTwoWayBinding">
+    <h1>{{serviceNameTwoWayBinding}}</h1>
+</div>
