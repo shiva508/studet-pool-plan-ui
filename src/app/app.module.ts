@@ -14,6 +14,8 @@ import { AboutusComponent } from './components/pages/aboutus/aboutus.component';
 import { BasicComponent } from './components/practice/basic/basic.component';
 import { ComponentSelectorComponent } from './components/component-selector/component-selector.component';
 import { BasicparciceComponent } from './components/practice/basicparcice/basicparcice.component';
+import { DatabingdingComponent } from './components/databingding/databingding.component';
+import { StringinterpolationComponent } from './components/databingding/stringinterpolation/stringinterpolation.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { BasicparciceComponent } from './components/practice/basicparcice/basicp
     AboutusComponent,
     BasicComponent,
     ComponentSelectorComponent,
-    BasicparciceComponent
+    BasicparciceComponent,
+    DatabingdingComponent,
+    StringinterpolationComponent
   ],
   imports: [
     BrowserModule,
