@@ -20,6 +20,8 @@ import { PropertyBindingComponent } from './components/databingding/property-bin
 import { EventbindingComponent } from './components/databingding/eventbinding/eventbinding.component';
 import { TwoWayDataBindingComponent } from './components/databingding/two-way-data-binding/two-way-data-binding.component';
 import { DataBindingDemoComponent } from './components/databingding/data-binding-demo/data-binding-demo.component';
+import { DirectiveComponent } from './directive/directive.component';
+import { UserComponent } from './directive/user/user.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { DataBindingDemoComponent } from './components/databingding/data-binding
     PropertyBindingComponent,
     EventbindingComponent,
     TwoWayDataBindingComponent,
-    DataBindingDemoComponent
+    DataBindingDemoComponent,
+    DirectiveComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
