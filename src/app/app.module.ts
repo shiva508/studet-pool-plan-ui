@@ -22,6 +22,13 @@ import { TwoWayDataBindingComponent } from './components/databingding/two-way-da
 import { DataBindingDemoComponent } from './components/databingding/data-binding-demo/data-binding-demo.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { UserComponent } from './directive/user/user.component';
+import { RecipesComponent } from './studentfood/recipes/recipes.component';
+import { RecipeListComponent } from './studentfood/recipes/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './studentfood/recipes/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './studentfood/recipes/recipe-list/recipe-item/recipe-item.component';
+import { ShoppingListComponent } from './studentfood/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './studentfood/shopping-list/shopping-edit/shopping-edit.component';
+import { SpheaderComponent } from './studentfood/spheader/spheader.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +50,14 @@ import { UserComponent } from './directive/user/user.component';
     TwoWayDataBindingComponent,
     DataBindingDemoComponent,
     DirectiveComponent,
-    UserComponent
+    UserComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    SpheaderComponent
   ],
   imports: [
     BrowserModule,
