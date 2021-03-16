@@ -29,6 +29,9 @@ import { RecipeItemComponent } from './studentfood/recipes/recipe-list/recipe-it
 import { ShoppingListComponent } from './studentfood/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './studentfood/shopping-list/shopping-edit/shopping-edit.component';
 import { SpheaderComponent } from './studentfood/spheader/spheader.component';
+import { ComponentDeepDiveComponent } from './components/practice/component-deep-dive/component-deep-dive.component';
+import { CockpitComponent } from './components/practice/component-deep-dive/cockpit/cockpit.component';
+import { ServerElementComponent } from './components/practice/component-deep-dive/server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +60,10 @@ import { SpheaderComponent } from './studentfood/spheader/spheader.component';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    SpheaderComponent
+    SpheaderComponent,
+    ComponentDeepDiveComponent,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     BrowserModule,
