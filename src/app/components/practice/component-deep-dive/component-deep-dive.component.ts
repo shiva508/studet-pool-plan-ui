@@ -8,21 +8,20 @@ import { SeverModel } from '../server.model';
 })
 export class ComponentDeepDiveComponent implements OnInit {
 
+  serverElements: SeverModel[] = [new SeverModel('server', 'server', 'server'), new SeverModel('blueprint', 'blueprint', 'blueprint')];
+  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  serverElements: SeverModel[] = [];
-  newServerName = '';
-  newServerContent = '';
-
-  onAddServer() {
-    this.serverElements.push(new SeverModel('server',this.newServerName,this.newServerName));
+  onServerAdded(serverData: {serverName:string,serverContent:string}) {
+    this.serverElements.push(new SeverModel('server', serverData.serverName, serverData.serverContent));
   }
 
-  onAddBlueprint() {
-    this.serverElements.push(new SeverModel('blueprint', this.newServerName, this.newServerName));
+  onBlueprintAdded(bluePrintData:{bluePrintName:string,bluePrintContent:string}) {
+    this.serverElements.push(new SeverModel('blueprint', bluePrintData.bluePrintName, bluePrintData.bluePrintContent));
   }
-
+ 
 }
