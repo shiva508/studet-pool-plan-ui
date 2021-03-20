@@ -6,6 +6,8 @@ import { BasicComponent } from './components/practice/basic/basic.component';
 import { DatabingdingComponent } from './components/databingding/databingding.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { ComponentDeepDiveComponent } from './components/practice/component-deep-dive/component-deep-dive.component';
+import { RecipesComponent } from './studentfood/recipes/recipes.component';
+import { ShoppingListComponent } from './studentfood/shopping-list/shopping-list.component';
 
 const routes: Routes = [
   { path: '', component: ToDosComponent },
@@ -13,7 +15,9 @@ const routes: Routes = [
   { path: 'basic', component: BasicComponent },
   { path: 'databibding', component: DatabingdingComponent },
   { path: 'directives', component: DirectiveComponent },
-  { path: 'componentsdeepdive', component: ComponentDeepDiveComponent }
+  { path: 'componentsdeepdive', component: ComponentDeepDiveComponent },
+  { path: 'recipes', component: RecipesComponent },
+  { path: 'shoppinglist', component: ShoppingListComponent}
 
 ];
 
