@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ContentChild, Input, OnChanges, OnInit, SimpleChange } from '@angular/core';
 import { SeverModel } from '../../server.model';
 @Component({
   selector: 'app-server-element',
@@ -8,10 +8,13 @@ import { SeverModel } from '../../server.model';
 export class ServerElementComponent implements OnInit {
 
   @Input('severModel') element: SeverModel = new SeverModel('', '', '');
-  
-  constructor() { }
-
+  @ContentChild('contentChildLocalReferance') contentChildLocalReferance: any;
+  constructor() {
+  }
+  ngOnChanges(changes: SimpleChange) {
+  }
   ngOnInit(): void {
   }
 
+ 
 }

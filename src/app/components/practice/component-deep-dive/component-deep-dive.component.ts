@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ContentChild, OnInit } from '@angular/core';
 import { SeverModel } from '../server.model';
+import { LifeCycleModel } from './life-cycle-model';
 
 @Component({
   selector: 'app-component-deep-dive',
@@ -9,11 +10,13 @@ import { SeverModel } from '../server.model';
 export class ComponentDeepDiveComponent implements OnInit {
 
   serverElements: SeverModel[] = [new SeverModel('server', 'server', 'server'), new SeverModel('blueprint', 'blueprint', 'blueprint')];
-  
+  cycles: LifeCycleModel[] = [new LifeCycleModel('Constructor', '1')];
+  @ContentChild('contentChildLocalReferance') contentChildLocalReferance: any;
 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
   onServerAdded(serverData: {serverName:string,serverContent:string}) {
@@ -24,4 +27,15 @@ export class ComponentDeepDiveComponent implements OnInit {
     this.serverElements.push(new SeverModel('blueprint', bluePrintData.bluePrintName, bluePrintData.bluePrintContent));
   }
  
+  onAddNewLifeCycle(lifeCycle: { cycleName: string, cycleOrder: string }) {
+    this.cycles.push(new LifeCycleModel(lifeCycle.cycleName, lifeCycle.cycleOrder))
+  }
+
+  onchangeFrist() {
+    this.cycles[0].cycleName = "Huups";
+  }
+
+  onDesrtoyFrist() {
+    this.cycles.splice(0, 1);
+  }
 }

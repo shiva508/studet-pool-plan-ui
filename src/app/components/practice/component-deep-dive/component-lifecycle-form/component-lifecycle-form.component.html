@@ -1,0 +1,11 @@
+<div class="col-xs-12">
+  <div class="form-group">
+      <label for="cycleName">Cycle Name</label>
+      <input type="text" id="cycleName" class="form-control" [(ngModel)]="cycleNameInput">
+  </div>
+  <div class="form-group">
+      <label for="cycleOrder">Cycle Order</label>
+      <input type="text" id="cycleOrder" class="form-control" [(ngModel)]="cycleOrderInput">
+  </div>
+  <button class="btn btn-primary" (click)="addNewLifeCycle()">Add Life Cycle</button>
+</div>

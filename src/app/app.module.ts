@@ -32,6 +32,8 @@ import { SpheaderComponent } from './studentfood/spheader/spheader.component';
 import { ComponentDeepDiveComponent } from './components/practice/component-deep-dive/component-deep-dive.component';
 import { CockpitComponent } from './components/practice/component-deep-dive/cockpit/cockpit.component';
 import { ServerElementComponent } from './components/practice/component-deep-dive/server-element/server-element.component';
+import { ComponentLifecycleComponent } from './components/practice/component-deep-dive/component-lifecycle/component-lifecycle.component';
+import { ComponentLifecycleFormComponent } from './components/practice/component-deep-dive/component-lifecycle-form/component-lifecycle-form.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +65,9 @@ import { ServerElementComponent } from './components/practice/component-deep-div
     SpheaderComponent,
     ComponentDeepDiveComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    ComponentLifecycleComponent,
+    ComponentLifecycleFormComponent
   ],
   imports: [
     BrowserModule,

@@ -6,10 +6,21 @@
   <hr>
   <div class="row">
     <app-server-element *ngFor="let serverElement of serverElements" [severModel]="serverElement">
-       <p>
+       <p #contentChildLocalReferance>
          <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
          <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
        </p>
       </app-server-element>
+  </div>
+  <hr>
+  <button class="btn btn-primary" (click)="onchangeFrist()">Change dode</button>
+  <button class="btn btn-danger" (click)="onDesrtoyFrist()">Change dode</button>
+  <hr>
+  <div class="row">
+    <app-component-lifecycle-form (saveLifeCycle)="onAddNewLifeCycle($event)"></app-component-lifecycle-form>
+  </div>
+  <div class="row">
+    <app-component-lifecycle *ngFor="let cycle of cycles" [cycle]="cycle" [cycleName]="cycle.cycleName">
+    </app-component-lifecycle>
   </div>
 </div>
