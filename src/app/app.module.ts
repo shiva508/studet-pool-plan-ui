@@ -34,6 +34,9 @@ import { CockpitComponent } from './components/practice/component-deep-dive/cock
 import { ServerElementComponent } from './components/practice/component-deep-dive/server-element/server-element.component';
 import { ComponentLifecycleComponent } from './components/practice/component-deep-dive/component-lifecycle/component-lifecycle.component';
 import { ComponentLifecycleFormComponent } from './components/practice/component-deep-dive/component-lifecycle-form/component-lifecycle-form.component';
+import { NumberComponentComponent } from './directive/number-component/number-component.component';
+import { DynamicHeigthDirectiveDirective } from './directive/dynamic-heigth-directive.directive';
+import { DetterDynamicHeigthDirectiveDirective } from './directive/detter-dynamic-heigth-directive.directive';
 
 @NgModule({
   declarations: [
@@ -67,7 +70,10 @@ import { ComponentLifecycleFormComponent } from './components/practice/component
     CockpitComponent,
     ServerElementComponent,
     ComponentLifecycleComponent,
-    ComponentLifecycleFormComponent
+    ComponentLifecycleFormComponent,
+    NumberComponentComponent,
+    DynamicHeigthDirectiveDirective,
+    DetterDynamicHeigthDirectiveDirective
   ],
   imports: [
     BrowserModule,
