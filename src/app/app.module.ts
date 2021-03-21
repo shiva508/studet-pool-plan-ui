@@ -39,6 +39,9 @@ import { DynamicHeigthDirectiveDirective } from './directive/dynamic-heigth-dire
 import { DetterDynamicHeigthDirectiveDirective } from './directive/detter-dynamic-heigth-directive.directive';
 import { UnlessDirectiveDirective } from './directive/unless-directive.directive';
 import { DropdownDiectiveDirective } from './studentfood/directives/dropdown-diective.directive';
+import { AccountListComponent } from './service/account-list/account-list.component';
+import { AccountComponent } from './service/account/account/account.component';
+import { NewaccountComponent } from './service/newaccount/newaccount/newaccount.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +80,10 @@ import { DropdownDiectiveDirective } from './studentfood/directives/dropdown-die
     DynamicHeigthDirectiveDirective,
     DetterDynamicHeigthDirectiveDirective,
     UnlessDirectiveDirective,
-    DropdownDiectiveDirective
+    DropdownDiectiveDirective,
+    AccountListComponent,
+    AccountComponent,
+    NewaccountComponent
   ],
   imports: [
     BrowserModule,

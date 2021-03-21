@@ -8,6 +8,7 @@ import { DirectiveComponent } from './directive/directive.component';
 import { ComponentDeepDiveComponent } from './components/practice/component-deep-dive/component-deep-dive.component';
 import { RecipesComponent } from './studentfood/recipes/recipes.component';
 import { ShoppingListComponent } from './studentfood/shopping-list/shopping-list.component';
+import { AccountListComponent } from './service/account-list/account-list.component';
 
 const routes: Routes = [
   { path: '', component: ToDosComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'directives', component: DirectiveComponent },
   { path: 'componentsdeepdive', component: ComponentDeepDiveComponent },
   { path: 'recipes', component: RecipesComponent },
-  { path: 'shoppinglist', component: ShoppingListComponent}
+  { path: 'shoppinglist', component: ShoppingListComponent },
+  { path: 'service', component: AccountListComponent}
 
 ];
 
