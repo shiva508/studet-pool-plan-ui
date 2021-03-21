@@ -10,6 +10,7 @@ export class NumberComponentComponent implements OnInit {
   oddNumberArray = [1, 3, 5];
   eventNumberArray = [2, 4, 6];
   onlyAdd = false;
+  swithchValue = 8;
   constructor() { }
 
   ngOnInit(): void {

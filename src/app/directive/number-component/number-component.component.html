@@ -4,20 +4,40 @@
       <br><br>
       <ul class="list-group">
         <div *ngIf="onlyAdd">
-          <li class="list-group-item" 
-          *ngFor="let odd of oddNumberArray" 
-          [ngClass]="{odd: odd % 2 !==0 }"
-          [ngStyle]="{backgroundColor: odd % 2 !==0 ? 'yellow':'transparent'}">{{odd}}</li>
+          <li class="list-group-item" *ngFor="let odd of oddNumberArray" [ngClass]="{odd: odd % 2 !==0 }"
+            [ngStyle]="{backgroundColor: odd % 2 !==0 ? 'yellow':'transparent'}">{{odd}}</li>
         </div>
+
+        <div *appUnlessDirective="onlyAdd">
+          <li class="list-group-item" *ngFor="let odd of oddNumberArray" [ngClass]="{odd: odd % 2 !==0 }"
+            [ngStyle]="{backgroundColor: odd % 2 !==0 ? 'yellow':'transparent'}">{{odd}}</li>
+        </div>
+
         <div *ngIf="!onlyAdd">
-          <li class="list-group-item" 
-          *ngFor="let even of eventNumberArray" 
-          [ngClass]="{even: even % 2 ==0 }"
-          >{{even}}
+          <li class="list-group-item" *ngFor="let even of eventNumberArray" [ngClass]="{even: even % 2 ==0 }">{{even}}
           </li>
         </div>
+        <ng-template [ngIf]="!onlyAdd">
+          <div>
+            <li class="list-group-item" *ngFor="let even of eventNumberArray" [ngClass]="{even: even % 2 ==0 }">
+              {{even}}
+            </li>
+          </div>
+        </ng-template>
+
       </ul>
       <pre appDynamicHeigthDirective>WE Losst</pre>
-      <pre appDetterDynamicHeigthDirective>WE Losst Again</pre>
+      <pre appDetterDynamicHeigthDirective [defaultColor]="'yellow'" [highlatedColor]="'red'">WE Losst Again</pre>
+      <div [ngSwitch]="swithchValue">
+        <p *ngSwitchCase="8">
+          Its is 8
+        </p>
+        <p *ngSwitchCase="4">
+          its 5
+        </p>
+        <p *ngSwitchDefault>
+          nothing
+        </p>
+      </div>
     </div>
   </div>

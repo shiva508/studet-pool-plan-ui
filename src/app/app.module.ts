@@ -37,6 +37,7 @@ import { ComponentLifecycleFormComponent } from './components/practice/component
 import { NumberComponentComponent } from './directive/number-component/number-component.component';
 import { DynamicHeigthDirectiveDirective } from './directive/dynamic-heigth-directive.directive';
 import { DetterDynamicHeigthDirectiveDirective } from './directive/detter-dynamic-heigth-directive.directive';
+import { UnlessDirectiveDirective } from './directive/unless-directive.directive';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { DetterDynamicHeigthDirectiveDirective } from './directive/detter-dynami
     ComponentLifecycleFormComponent,
     NumberComponentComponent,
     DynamicHeigthDirectiveDirective,
-    DetterDynamicHeigthDirectiveDirective
+    DetterDynamicHeigthDirectiveDirective,
+    UnlessDirectiveDirective
   ],
   imports: [
     BrowserModule,
