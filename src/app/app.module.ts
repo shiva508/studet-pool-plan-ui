@@ -38,6 +38,7 @@ import { NumberComponentComponent } from './directive/number-component/number-co
 import { DynamicHeigthDirectiveDirective } from './directive/dynamic-heigth-directive.directive';
 import { DetterDynamicHeigthDirectiveDirective } from './directive/detter-dynamic-heigth-directive.directive';
 import { UnlessDirectiveDirective } from './directive/unless-directive.directive';
+import { DropdownDiectiveDirective } from './studentfood/directives/dropdown-diective.directive';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { UnlessDirectiveDirective } from './directive/unless-directive.directive
     NumberComponentComponent,
     DynamicHeigthDirectiveDirective,
     DetterDynamicHeigthDirectiveDirective,
-    UnlessDirectiveDirective
+    UnlessDirectiveDirective,
+    DropdownDiectiveDirective
   ],
   imports: [
     BrowserModule,
