@@ -43,6 +43,7 @@ import { AccountListComponent } from './service/account-list/account-list.compon
 import { AccountComponent } from './service/account/account/account.component';
 import { NewaccountComponent } from './service/newaccount/newaccount/newaccount.component';
 import { AccountServiceService } from './service/service/account-service.service';
+import { ShoppingServiceService } from './studentfood/shopping-list/service/shopping-service.service';
 
 @NgModule({
   declarations: [
@@ -92,7 +93,7 @@ import { AccountServiceService } from './service/service/account-service.service
     FormsModule,
     HttpClientModule
   ],
-  providers: [AccountServiceService],
+  providers: [AccountServiceService, ShoppingServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
