@@ -1,4 +1,5 @@
 import { Component, OnInit,Output,EventEmitter, ViewChild } from '@angular/core';
+import { AccountServiceService } from '../../service/account-service.service';
 
 @Component({
   selector: 'app-newaccount',
@@ -6,10 +7,15 @@ import { Component, OnInit,Output,EventEmitter, ViewChild } from '@angular/core'
   styleUrls: ['./newaccount.component.css']
 })
 export class NewaccountComponent implements OnInit {
-  @Output() accountAdded = new EventEmitter<any>();
+  // @Output() accountAdded = new EventEmitter<any>();
   @ViewChild('accountName', { static: true }) accountName: any;
   @ViewChild('status', { static: true }) status: any;
-  constructor() { }
+
+  constructor(private accountServiceService: AccountServiceService) {
+    this.accountServiceService.statusUpdated.subscribe((status: string) => {
+      alert('Updated Status :'+status)
+    })
+  }
 
   ngOnInit(): void {
 
@@ -18,6 +24,7 @@ export class NewaccountComponent implements OnInit {
     // console.log(this.accountName.nativeElement.value);
     // const name = this.accountName.nativeElement.value;
     // const status = this.status.nativeElement.value;
-    this.accountAdded.emit({ name: name, status: status});
+    this.accountServiceService.onAccountAdded({ name: name, status: status })
+    //this.accountAdded.emit({ name: name, status: status});
   }
 }

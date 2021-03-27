@@ -42,6 +42,7 @@ import { DropdownDiectiveDirective } from './studentfood/directives/dropdown-die
 import { AccountListComponent } from './service/account-list/account-list.component';
 import { AccountComponent } from './service/account/account/account.component';
 import { NewaccountComponent } from './service/newaccount/newaccount/newaccount.component';
+import { AccountServiceService } from './service/service/account-service.service';
 
 @NgModule({
   declarations: [
@@ -91,7 +92,7 @@ import { NewaccountComponent } from './service/newaccount/newaccount/newaccount.
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AccountServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
