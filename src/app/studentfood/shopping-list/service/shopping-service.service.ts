@@ -21,5 +21,8 @@ export class ShoppingServiceService {
     console.log(this.ingredients)
     this.ingredientsChanged.emit(this.ingredients);
   }
-
+  addNewIngredientList = (ingredientslist: Ingredients[]) => {
+    this.ingredients.push(...ingredientslist);
+    this.ingredientsChanged.emit(this.ingredients)
+  }
 }
