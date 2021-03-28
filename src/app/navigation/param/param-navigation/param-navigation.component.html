@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="alert alert-primary" role="alert">
+      {{user.name}}
+    </div>
+    <div class="alert alert-secondary" role="alert">
+     {{user.id}}
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+       <a [routerLink]="[ '/navigation', 100,'shiva' ]">{{user.name}}({{user.id}})</a>
+  </div>
+</div>

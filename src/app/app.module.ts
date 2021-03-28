@@ -44,6 +44,9 @@ import { AccountComponent } from './service/account/account/account.component';
 import { NewaccountComponent } from './service/newaccount/newaccount/newaccount.component';
 import { AccountServiceService } from './service/service/account-service.service';
 import { ShoppingServiceService } from './studentfood/shopping-list/service/shopping-service.service';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ParamNavigationComponent } from './navigation/param/param-navigation/param-navigation.component';
+import { EditComponentComponent } from './navigation/edit/edit-component/edit-component.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +88,10 @@ import { ShoppingServiceService } from './studentfood/shopping-list/service/shop
     DropdownDiectiveDirective,
     AccountListComponent,
     AccountComponent,
-    NewaccountComponent
+    NewaccountComponent,
+    NavigationComponent,
+    ParamNavigationComponent,
+    EditComponentComponent
   ],
   imports: [
     BrowserModule,
