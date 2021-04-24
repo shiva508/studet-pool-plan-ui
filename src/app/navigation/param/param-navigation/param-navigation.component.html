@@ -8,7 +8,7 @@
     </div>
   </div>
   <hr>
-  <div class="row">
-       <a [routerLink]="[ '/navigation', 100,'shiva' ]">{{user.name}}({{user.id}})</a>
+  <div class="row" *ngFor="let user of users">
+       <a [routerLink]="[ '/navigation', user.id,user.name ]">{{user.name}}({{user.id}})</a>
   </div>
 </div>

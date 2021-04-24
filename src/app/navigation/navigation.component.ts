@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NavigationServiceService } from './service/navigation-service.service';
 
 @Component({
   selector: 'app-navigation',
@@ -7,10 +8,11 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
-
-  constructor(private router:Router,private route:ActivatedRoute) { }
+  users: any;
+  constructor(private router: Router, private route: ActivatedRoute, private navigationServiceService: NavigationServiceService) { }
 
   ngOnInit(): void {
+  this.users=this.navigationServiceService.users;
   }
   navigateToHome = () => {
     this.router.navigate(['/about'])

@@ -47,6 +47,12 @@ import { ShoppingServiceService } from './studentfood/shopping-list/service/shop
 import { NavigationComponent } from './navigation/navigation.component';
 import { ParamNavigationComponent } from './navigation/param/param-navigation/param-navigation.component';
 import { EditComponentComponent } from './navigation/edit/edit-component/edit-component.component';
+import { ClassRoomComponent } from './navigation/nested/class-room/class-room.component';
+import { SubjectlistComponent } from './navigation/nested/subjects/subjectlist/subjectlist.component';
+import { EditSubjectComponent } from './navigation/nested/subjects/edit/edit-subject/edit-subject.component';
+import { SunjectDetailsComponent } from './navigation/nested/subjects/subjectdetails/sunject-details/sunject-details.component';
+import { ClassroomheaderComponent } from './navigation/nested/classroomheader/classroomheader.component';
+import { TodayComponent } from './navigation/nested/today/today.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +97,13 @@ import { EditComponentComponent } from './navigation/edit/edit-component/edit-co
     NewaccountComponent,
     NavigationComponent,
     ParamNavigationComponent,
-    EditComponentComponent
+    EditComponentComponent,
+    ClassRoomComponent,
+    SubjectlistComponent,
+    EditSubjectComponent,
+    SunjectDetailsComponent,
+    ClassroomheaderComponent,
+    TodayComponent
   ],
   imports: [
     BrowserModule,

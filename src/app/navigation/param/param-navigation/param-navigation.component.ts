@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { NavigationServiceService } from '../../service/navigation-service.service';
 
 @Component({
   selector: 'app-param-navigation',
@@ -9,10 +10,12 @@ import { Subscription } from 'rxjs';
 })
 export class ParamNavigationComponent implements OnInit {
   user: any;
+  users: any;
   paramSunscrription: Subscription = new Subscription;
-  constructor(private route:ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private navigationServiceService: NavigationServiceService) { }
 
   ngOnInit(): void {
+    this.users=this.navigationServiceService.users
     this.user = {
       id: this.route.snapshot.params['id'],
       name:this.route.snapshot.params['name']
