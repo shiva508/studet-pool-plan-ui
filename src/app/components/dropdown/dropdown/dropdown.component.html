@@ -1,0 +1,7 @@
+<div class="form-group">
+    <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="selectedValue">
+    <select class="form-control" [value]="selectedValue" [(ngModel)]="selectedValue" (change)="onChangeDropDown($event)">
+        <option selected>Open this select menu</option>
+        <option *ngFor="let data of dropdownlist" [value]="data.id">{{data.key_value}}</option>
+    </select>
+</div>

@@ -15,6 +15,7 @@ import { EditComponentComponent } from './navigation/edit/edit-component/edit-co
 import { ClassRoomComponent } from './navigation/nested/class-room/class-room.component';
 import { SubjectlistComponent } from './navigation/nested/subjects/subjectlist/subjectlist.component';
 import { TodayComponent } from './navigation/nested/today/today.component';
+import { TableComponent } from './components/table/table/table.component';
 
 const routes: Routes = [
   { path: '', component: ToDosComponent },
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'navigations/:id/edit', component: EditComponentComponent },
   { path: 'classroom', component: ClassRoomComponent },
   { path: 'subject', component: SubjectlistComponent },
-  { path: 'today', component: TodayComponent }
+  { path: 'today', component: TodayComponent },
+  { path: 'table',component:TableComponent}
 
 ];
 

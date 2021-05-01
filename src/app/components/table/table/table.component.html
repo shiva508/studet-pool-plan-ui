@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of users;index as $index">
+                <th scope="row">{{data.id}}</th>
+                <td>
+                    <div class="form-group" >
+                        <input type="text" (change)="onChangeData()" class="form-control" id="exampleInputEmail1" [(ngModel)]="data.first">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group" >
+                        <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="data.last">
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group" >
+                        <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="data.handle">
+                    </div>
+                </td>
+                <td>
+                    <app-dropdown 
+                    [selectedValue]="data.choose" 
+                    [dropdownlist]="dropdownlist"
+                    (dropDownEmitter)="dropDownEmitter($event,$index)"></app-dropdown>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
+
+
+

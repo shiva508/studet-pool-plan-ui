@@ -53,6 +53,8 @@ import { EditSubjectComponent } from './navigation/nested/subjects/edit/edit-sub
 import { SunjectDetailsComponent } from './navigation/nested/subjects/subjectdetails/sunject-details/sunject-details.component';
 import { ClassroomheaderComponent } from './navigation/nested/classroomheader/classroomheader.component';
 import { TodayComponent } from './navigation/nested/today/today.component';
+import { TableComponent } from './components/table/table/table.component';
+import { DropdownComponent } from './components/dropdown/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -103,7 +105,9 @@ import { TodayComponent } from './navigation/nested/today/today.component';
     EditSubjectComponent,
     SunjectDetailsComponent,
     ClassroomheaderComponent,
-    TodayComponent
+    TodayComponent,
+    TableComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
